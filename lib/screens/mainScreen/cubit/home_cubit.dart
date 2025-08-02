@@ -106,6 +106,7 @@ class HomeCubit extends Cubit<HomeState> {
         image: item.image,
         price: item.price,
       );
+      FirestoreService().addItem(id: id, name: name, image: image, price: price)
     }
     emit(SeedItems());
   }

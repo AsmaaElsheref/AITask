@@ -1,16 +1,24 @@
 ## Setup Instructions -->
 
 1. Clone the repository :
-   - git clone https://github.com/AsmaaElsheref/Ecommerce.git
+   - git clone https://github.com/AsmaaElsheref/AITask.git
 2. Install dependencies :
    - flutter pub get
 3. Run the app :
    - flutter run
 
+## Populating Demo Data -->
+
+** Run this function :
+FirestoreService().addItem(id: itemId, name: itemName, image: itemImageUrl, price: itemPrice);
+
 ## ProxyAI Prompts
 
 ### Prompt 1:
 ** Generate a GridView.builder that builds a list of product cards
+
+** Used in:
+  - lib/screens/mainScreen/widgets/buildProducts/build_products.dart
 
 **Output:**  
 import 'package:flutter/material.dart';
@@ -89,6 +97,10 @@ price: product['price']!,
 ### Prompt 2:
 ** Create a Firestore service class that reads products from a items collection. Each item has a name, image, and price. Use a ItemModel and return a list of items.
 
+** Used in: 
+  - lib/models/itemModel/item_model.dart
+  - lib/data/firebaseService/firebase_service.dart
+
 **Output:**  
 // Step 1: Define the ItemModel class with name, image, and price properties.
 class ItemModel {
@@ -159,6 +171,9 @@ return ItemModel.fromMap(doc.data() as Map<String, dynamic>, doc.id);
 ### Prompt 3:
 ** Generate a methode to write a new item to Firestore , that item should include a name , image , price
 
+** Used in:
+  - lib/data/firebaseService/firebase_service.dart
+ 
 **Output:** 
 
 // Step 1, 2, 3, 4: Generate a method to write a new item to Firestore.
