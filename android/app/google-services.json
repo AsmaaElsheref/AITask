@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "707402922565",
+    "project_id": "aitask-e04ef",
+    "storage_bucket": "aitask-e04ef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707402922565:android:0fe1d9136237745831c12c",
+        "android_client_info": {
+          "package_name": "com.example.AiTask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBPNElfpeIFQcG-kt3xP7LGc9lH4kjKGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
