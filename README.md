@@ -50,5 +50,5 @@ The output was used to create a model class ItemModel and also create a Firestor
 The output was used to create a method in FirestoreService class named : addItem to write a new item to Firestore.
 
 <p float="left">
-  <img src="assets/screenshot.jpg" width="45%" />
+  <img src="assets/icons/screenshot.jpg" width="45%" />
 </p>
